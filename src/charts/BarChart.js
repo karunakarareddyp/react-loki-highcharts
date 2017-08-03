@@ -3,10 +3,16 @@ import Chart from './BaseChart'
 
 var options = {
     chart: {
-        type: 'column'
+        type: 'column',
+        borderRadius: 5,
+        borderColor: '#000820',
+        borderWidth: 0.3
     },
     title: {
         text: 'Fruit Consumption'
+    },
+    credits: {
+        enabled:false
     },
     xAxis: {
         categories: ['Apples', 'Bananas', 'Oranges']

@@ -10,6 +10,10 @@ class BaseChart extends React.Component {
                 module(Highcharts)
             })
         }
+        Highcharts.setOptions({
+            colors: ["#2b908f", "#90ee7e", "#f45b5b", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee",
+                "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"]
+        })
         // Set container which the chart should render to.
         this.chart = new Highcharts[this.props.type || 'Chart'](
             this.props.container,
@@ -22,7 +26,7 @@ class BaseChart extends React.Component {
     }
     render(){
         return(
-            <div style={{maxWidth:'900px', marginLeft:'60px'}} id={this.props.container}/>
+            <div className="chart-style" id={this.props.container}/>
         )
     }
 }

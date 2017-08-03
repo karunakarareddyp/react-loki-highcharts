@@ -68,3 +68,16 @@ input {
     margin-right: 30%;
     width: 250px;
 }
+
+.chart-container {
+    display: block;
+}
+
+.chart-style {
+    margin: 5px;
+    display: inline-block;
+    width: 770px;
+    min-width: 400px;
+    max-width: 900px;
+    height: 250px;
+}

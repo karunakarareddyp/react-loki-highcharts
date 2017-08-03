@@ -15,9 +15,9 @@ class Header extends React.Component {
         return (
             <nav className="menu-nav">
                 <ul>
-                    <li className="active"><Link to="/">Home</Link></li>
+                    <li className="active"><Link to="/">Dashboard</Link></li>
                     <li><Link to="/loki">Loki DB</Link></li>
-                    <li><Link to="/dashboard">Dashboard</Link></li>
+                    <li><Link to="/description">Description</Link></li>
                     <li style={{float: "right"}}><Link to="/contact">Contact</Link></li>
                 </ul>
             </nav>
